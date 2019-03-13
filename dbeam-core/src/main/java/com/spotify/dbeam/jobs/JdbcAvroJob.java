@@ -135,9 +135,9 @@ public class JdbcAvroJob {
 
   private static void logMemoryInfo() {
     Runtime runtime = Runtime.getRuntime();
-    int mb = 1024*1024;
-    LOGGER.info("Max memory {}Mb, Total memory {}Mb", runtime.maxMemory() / mb, runtime.totalMemory() / mb);
-
+    int mb = 1024 * 1024;
+    LOGGER.info("Max memory {}Mb, Total memory {}Mb",
+            runtime.maxMemory() / mb, runtime.totalMemory() / mb);
   }
 
   public static void main(String[] cmdLineArgs) {
